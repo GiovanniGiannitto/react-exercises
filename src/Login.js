@@ -24,6 +24,14 @@ export class Login extends React.Component {
     
   }
 
+  resetAllInputs = () => {
+      this.setState({
+          username: "",
+          password: "",
+          remember: false
+      })
+  }
+
   render() {
     return (
       <div>
@@ -53,6 +61,7 @@ export class Login extends React.Component {
         >
           Login
         </button>
+        <button name="reset" onClick={this.resetAllInputs}>Reset</button>
       </div>
     );
   }
