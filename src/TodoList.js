@@ -35,6 +35,13 @@ export class TodoList extends React.Component {
     })
   }
 
+  RemoveItem = () => {
+    this.state.items.pop(<li>{this.state.input}</li>)
+    this.setState({
+      input: ""
+    })
+  }
+
   render() {
     return (
       <div>
@@ -48,6 +55,7 @@ export class TodoList extends React.Component {
           Add Item
         </button>
         <button type="button" onClick={this.ResetLists}>Reset lists</button>
+        <button type="button" onClick={this.RemoveItem}>Remove item</button>
         <ul>
           {this.state.items}
         </ul>
