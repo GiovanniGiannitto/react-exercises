@@ -1,4 +1,3 @@
-import React from "react";
 
 export class TodoList extends React.Component {
   state = {
@@ -47,3 +46,4 @@ export class TodoList extends React.Component {
     );
   }
 }
+
