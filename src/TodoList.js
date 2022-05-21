@@ -3,31 +3,45 @@ import React from "react";
 export class TodoList extends React.Component {
   state = {
     items: ["apple", "orange"],
+    input: null
   };
 
-  AddItem = () => {
-    const newItem = this.newItem.value;
+  handleInputItems = (event) => {
+    const value =  event.target.value
     this.setState({
-      items: [...this.state.items, newItem],
-    });
+      input: value
+    })
+  }
+
+  componentDidMount = () => {
+    this.setState({
+      items: this.state.items.map((item, index) => (
+        <li key={item + index}>{item}</li>
+      ))
+    })
+  }
+
+  AddItem = () => {
+    this.state.items.push(<li>{this.state.input}</li>)
+    this.setState({
+      input: ""
+    })
   };
 
   render() {
-    const { items } = this.state;
     return (
       <div>
         <input
-          ref={(input) => (this.newItem = input)}
+          onChange={this.handleInputItems}
           type="text"
           placeholder="item..."
+          value={this.state.input}
         ></input>
         <button type="button" onClick={this.AddItem}>
           Add Item
         </button>
         <ul>
-          {items.map((item, index) => (
-            <li key={item + index}>{item}</li>
-          ))}
+          {this.state.items}
         </ul>
       </div>
     );
