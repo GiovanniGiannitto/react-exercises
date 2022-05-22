@@ -57,7 +57,7 @@ export class TodoList extends React.Component {
         <button type="button" onClick={this.ResetLists}>Reset lists</button>
         <button type="button" onClick={this.RemoveItem}>Remove item</button>
         <ul>
-          {this.state.items}
+          {this.props.render(this.state.items)}
         </ul>
       </div>
     );

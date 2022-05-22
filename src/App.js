@@ -22,7 +22,14 @@ export class App extends React.Component {
                 <InteractiveWelcome />
                 <Login />
                 <UncontrolledLogin />
-                <TodoList />
+                <TodoList render={
+                    (items) => {
+                        const [...item] = items
+                        return (
+                            <div>{item}</div>
+                        )
+                    }
+                }/>
                 <Container title="My prop is a title" />
             </div>
         )
