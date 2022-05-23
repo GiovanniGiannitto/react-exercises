@@ -1,9 +1,11 @@
 import React from "react";
 
 export class DisplayLanguage extends React.Component {
-    render() {
+    render () {
         return (
-            <div></div>
+            <div>
+
+            </div>
         )
     }
 }
