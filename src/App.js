@@ -26,7 +26,7 @@ export class App extends React.Component {
                     (items) => {
                         const [...item] = items
                         return (
-                            <div>{item}</div>
+                            <ul><li>{item}</li></ul>
                         )
                     }
                 }/>
