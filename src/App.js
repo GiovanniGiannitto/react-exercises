@@ -50,7 +50,7 @@ export class App extends React.Component {
                     }
                 }/>
                 <Container title="My prop is a title" />
-                <Sum numbers={[1, 2, 3, 4, 5, 6, 7, 8, 9]}/>
+                <Sum />
             </div>
         )
     }
