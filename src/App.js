@@ -36,7 +36,7 @@ export class App extends React.Component {
                 <Hello />
                 <Welcome name="John" renderAge={true}/>
                 <Counter initialValue={2} incrementAmount={2} incrementInterval={2000} />
-                <ClickCounter />
+                <ClickCounter onCounterChange={(counter) => {console.log(`the count is ${counter}`)}}/>
                 <ClickTracker />
                 <InteractiveWelcome />
                 <Login />

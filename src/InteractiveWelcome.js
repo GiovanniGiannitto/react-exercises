@@ -4,7 +4,7 @@ import { Welcome } from "./Welcome"
 export class InteractiveWelcome extends React.Component {
 
     state = {
-        username: null
+        username: ""
     }
 
     handleInputChange = (event) => {
