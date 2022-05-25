@@ -4,6 +4,7 @@ import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
 import { Counter } from "./Counter";
 import { DisplayLanguage } from "./DisplayLanguage";
+import { GitHubUser } from "./GitHubUser";
 import { Hello } from "./Hello";
 import { InteractiveWelcome } from "./InteractiveWelcome";
 import { LanguageContext } from "./LanguageContext";
@@ -35,7 +36,7 @@ export class App extends React.Component {
                 </LanguageContext.Provider>
                 <Hello />
                 <Welcome name="John" renderAge={true}/>
-                <Counter initialValue={2} incrementAmount={2} incrementInterval={2000} />
+                <Counter initialValue={2} incrementAmount={2} incrementInterval={10000} />
                 <ClickCounter onCounterChange={(counter) => {console.log(`the count is ${counter}`)}}/>
                 <ClickTracker />
                 <InteractiveWelcome />
@@ -51,6 +52,7 @@ export class App extends React.Component {
                 }/>
                 <Container title="My prop is a title" />
                 <Sum />
+                <GitHubUser username="GiovanniGiannitto"/>
             </div>
         )
     }
