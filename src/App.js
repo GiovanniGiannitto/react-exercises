@@ -1,4 +1,5 @@
 import React from "react";
+import { CarDetail } from "./CarDetail";
 // import { ClickCounter } from "./ClickCounter";
 // import { ClickTracker } from "./ClickTracker";
 // import { Container } from "./Container";
@@ -59,6 +60,7 @@ export class App extends React.Component {
                 <GitHubUserList />
                 <HookCounter />
                 <HookForm />
+                <CarDetail initialData={{model:"Alfa Mito", year:2008, color:"blue"}}/>
             </div>
         )
     }
