@@ -4,8 +4,8 @@ import React from "react";
 // import { Container } from "./Container";
 // import { Counter } from "./Counter";
 // import { DisplayLanguage } from "./DisplayLanguage";
-import { GitHubUser } from "./GitHubUser";
-import { GitHubUserList } from "./GitHubUserList";
+// import { GitHubUser } from "./GitHubUser";
+// import { GitHubUserList } from "./GitHubUserList";
 // import { Hello } from "./Hello";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
 // import { LanguageContext } from "./LanguageContext";
@@ -14,6 +14,8 @@ import { GitHubUserList } from "./GitHubUserList";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 // import { Welcome } from "./Welcome";
+import { HookCounter } from "./HookCounter"
+import { HookForm } from "./HookForm";
 
 export class App extends React.Component {
     state = {
@@ -52,9 +54,11 @@ export class App extends React.Component {
                     }
                 }/>
                 <Container title="My prop is a title" />
-                <Sum /> */}
+                <Sum /> 
                 <GitHubUser username="GiovanniGiannitto"/>
-                <GitHubUserList />
+                <GitHubUserList />*/}
+                <HookCounter />
+                <HookForm />
             </div>
         )
     }
