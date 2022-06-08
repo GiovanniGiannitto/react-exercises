@@ -1,16 +1,23 @@
 import React from "react";
-import { ClickCounter } from "./ClickCounter";
-import { ClickTracker } from "./ClickTracker";
-import { Container } from "./Container";
-import { Counter } from "./Counter";
-import { DisplayLanguage } from "./DisplayLanguage";
-import { Hello } from "./Hello";
-import { InteractiveWelcome } from "./InteractiveWelcome";
-import { LanguageContext } from "./LanguageContext";
-import { Login } from "./Login";
-import { TodoList } from "./TodoList";
-import { UncontrolledLogin } from "./UncontrolledLogin";
-import { Welcome } from "./Welcome";
+import { FilteredList } from "./FilteredList";
+// import { CarDetail } from "./CarDetail";
+// import { ClickCounter } from "./ClickCounter";
+// import { ClickTracker } from "./ClickTracker";
+// import { Container } from "./Container";
+// import { Counter } from "./Counter";
+// import { DisplayLanguage } from "./DisplayLanguage";
+// import { GitHubUser } from "./GitHubUser";
+// import { GitHubUserList } from "./GitHubUserList";
+// import { Hello } from "./Hello";
+// import { InteractiveWelcome } from "./InteractiveWelcome";
+// import { LanguageContext } from "./LanguageContext";
+// import { Login } from "./Login";
+// import { Sum } from "./Sum";
+// import { TodoList } from "./TodoList";
+// import { UncontrolledLogin } from "./UncontrolledLogin";
+// import { Welcome } from "./Welcome";
+// import { HookCounter } from "./HookCounter"
+// import { HookForm } from "./HookForm";
 
 export class App extends React.Component {
     state = {
@@ -25,17 +32,11 @@ export class App extends React.Component {
     render() {
         return (
             <div>
-                <LanguageContext.Provider value={this.state.language}>
-                    <select value={this.state.language} onChange={this.handleLanguageChange}>
-                        <option value="en">English</option>
-                        <option value="it">Italian</option>
-                    </select>
-                    <DisplayLanguage />
-                </LanguageContext.Provider>
+                {/* 
                 <Hello />
                 <Welcome name="John" renderAge={true}/>
-                <Counter initialValue={2} incrementAmount={2} incrementInterval={2000} />
-                <ClickCounter />
+                <Counter initialValue={2} incrementAmount={2} incrementInterval={10000} />
+                <ClickCounter onCounterChange={(counter) => {console.log(`the count is ${counter}`)}}/>
                 <ClickTracker />
                 <InteractiveWelcome />
                 <Login />
@@ -49,6 +50,20 @@ export class App extends React.Component {
                     }
                 }/>
                 <Container title="My prop is a title" />
+                <Sum /> */}
+                {/* <LanguageContext.Provider value={this.state.language}>
+                    <select value={this.state.language} onChange={this.handleLanguageChange}>
+                        <option value="en">English</option>
+                        <option value="it">Italian</option>
+                    </select>
+                    <DisplayLanguage />
+                </LanguageContext.Provider> */}
+                {/* <GitHubUser username="GiovanniGiannitto"/> 
+                <GitHubUserList />
+                <HookForm />
+                <CarDetail initialData={{model:"Alfa Mito", year:2008, color:"blue"}}/>
+                <HookCounter />*/}
+                <FilteredList />
             </div>
         )
     }
