@@ -1,4 +1,5 @@
 import React from "react";
+import { FilteredList } from "./FilteredList";
 // import { CarDetail } from "./CarDetail";
 // import { ClickCounter } from "./ClickCounter";
 // import { ClickTracker } from "./ClickTracker";
@@ -15,7 +16,7 @@ import React from "react";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
 // import { Welcome } from "./Welcome";
-import { HookCounter } from "./HookCounter"
+// import { HookCounter } from "./HookCounter"
 // import { HookForm } from "./HookForm";
 
 export class App extends React.Component {
@@ -60,8 +61,9 @@ export class App extends React.Component {
                 {/* <GitHubUser username="GiovanniGiannitto"/> 
                 <GitHubUserList />
                 <HookForm />
-                <CarDetail initialData={{model:"Alfa Mito", year:2008, color:"blue"}}/>*/}
-                <HookCounter />
+                <CarDetail initialData={{model:"Alfa Mito", year:2008, color:"blue"}}/>
+                <HookCounter />*/}
+                <FilteredList />
             </div>
         )
     }
