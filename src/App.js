@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 // import { ClickCounter } from "./ClickCounter";
 // import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
-// import { Counter } from "./Counter";
+import { Counter } from "./Counter";
 // import { DisplayLanguage } from "./DisplayLanguage";
 // import { GitHubUser } from "./GitHubUser";
 // import { GitHubUserList } from "./GitHubUserList";
@@ -35,8 +35,6 @@ export class App extends React.Component {
       <div>
         {/* 
                 <Hello />
-                <Welcome name="John" renderAge={true}/>
-                <Counter initialValue={2} incrementAmount={2} incrementInterval={10000} />
                 <ClickCounter onCounterChange={(counter) => {console.log(`the count is ${counter}`)}}/>
                 <ClickTracker />
                 <InteractiveWelcome />
@@ -66,7 +64,20 @@ export class App extends React.Component {
                 <FilteredList />*/}
         <Container title="My prop is a title">
           <Routes>
-            <Route path="/" element={<Welcome name="Giovanni" />} />
+            <Route
+              path="/"
+              element={<Welcome name="John" renderAge={true} />}
+            />
+            <Route
+              path="counter"
+              element={
+                <Counter
+                  initialValue={2}
+                  incrementAmount={2}
+                  incrementInterval={1000}
+                />
+              }
+            />
           </Routes>
         </Container>
       </div>
