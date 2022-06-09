@@ -65,6 +65,7 @@ export class App extends React.Component {
                 <FilteredList />*/}
         <Container title="My prop is a title">
           <Routes>
+              
             <Route
               path="/"
               element={<Welcome name="John" renderAge={true} />}
@@ -80,6 +81,7 @@ export class App extends React.Component {
               }
             />
             <Route path="users" element={<GitHubUserList />}>
+                <Route index element={<p>Add user and select it</p>} />
                 <Route path=":username" element={<ShowGitHubUser />} />
             </Route>
             
