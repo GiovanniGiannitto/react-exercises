@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 // import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
 import { Counter } from "./Counter";
+import { ShowGitHubUser } from "./ShowGitHubUser";
 // import { DisplayLanguage } from "./DisplayLanguage";
 // import { GitHubUser } from "./GitHubUser";
 // import { GitHubUserList } from "./GitHubUserList";
@@ -78,6 +79,7 @@ export class App extends React.Component {
                 />
               }
             />
+            <Route path="user:username" element={<ShowGitHubUser />} />
           </Routes>
         </Container>
       </div>
