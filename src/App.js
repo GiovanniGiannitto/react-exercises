@@ -1,15 +1,15 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+//import { Link, Route, Routes } from "react-router-dom";
 // import { FilteredList } from "./FilteredList";
 // import { CarDetail } from "./CarDetail";
 // import { ClickCounter } from "./ClickCounter";
 // import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
-import { Counter } from "./Counter";
-import { GitHubUserList } from "./GitHubUserList";
-import { ShowGitHubUser } from "./ShowGitHubUser";
+//import { Counter } from "./Counter";
+import { GitHubUser } from "./GitHubUser";
+//import { GitHubUserList } from "./GitHubUserList";
+//import { ShowGitHubUser } from "./ShowGitHubUser";
 // import { DisplayLanguage } from "./DisplayLanguage";
-// import { GitHubUser } from "./GitHubUser";
 // import { Hello } from "./Hello";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
 // import { LanguageContext } from "./LanguageContext";
@@ -17,7 +17,7 @@ import { ShowGitHubUser } from "./ShowGitHubUser";
 // import { Sum } from "./Sum";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
-import { Welcome } from "./Welcome";
+//import { Welcome } from "./Welcome";
 // import { HookCounter } from "./HookCounter"
 // import { HookForm } from "./HookForm";
 
@@ -64,7 +64,7 @@ export class App extends React.Component {
                 <HookCounter />
                 <FilteredList />*/}
         <Container title="My prop is a title">
-          <Routes>
+          {/* <Routes>
               
             <Route
               path="/"
@@ -98,7 +98,8 @@ export class App extends React.Component {
 
           <Link to="/">Home</Link>
           <Link to="counter">Go to Counter</Link>
-          <Link to="user:username">Go to fetch Github</Link>
+          <Link to="user:username">Go to fetch Github</Link> */}
+          <GitHubUser />
         </Container>
       </div>
     );
