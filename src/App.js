@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 // import { FilteredList } from "./FilteredList";
 // import { CarDetail } from "./CarDetail";
 // import { ClickCounter } from "./ClickCounter";
@@ -81,6 +81,9 @@ export class App extends React.Component {
             />
             <Route path="user:username" element={<ShowGitHubUser />} />
           </Routes>
+          <Link to="/">Home</Link>
+          <Link to="counter">Go to Counter</Link>
+          <Link to="user:username">Go to fetch Github</Link>
         </Container>
       </div>
     );
