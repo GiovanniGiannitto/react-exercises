@@ -5,7 +5,7 @@ export function ShowGitHubUser() {
     const {username} = useParams()
     return (
         <div>
-            {username && <GitHubUser username="GiovanniGiannitto" />}
+            {username && <GitHubUser username={"GiovanniGiannitto"} />}
         </div>
         
     )
