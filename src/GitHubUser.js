@@ -1,7 +1,7 @@
 import { useGitHubUser } from "./useGitHubUser";
 
 export function GitHubUser() {
-  const { users, error, isLoading } = useGitHubUser();
+  const { users, error, isLoading, handleRefetch } = useGitHubUser();
 
   return (
     <div>
@@ -14,6 +14,7 @@ export function GitHubUser() {
           ))}
         </ul>
       )}
+      <button onClick={handleRefetch}>Refetch</button>
     </div>
   );
 }
