@@ -5,10 +5,11 @@ import React from "react";
 // import { ClickCounter } from "./ClickCounter";
 // import { ClickTracker } from "./ClickTracker";
 import { Container } from "./Container";
-//import { Counter } from "./Counter";
-import { GitHubUser } from "./GitHubUser";
-//import { GitHubUserList } from "./GitHubUserList";
-//import { ShowGitHubUser } from "./ShowGitHubUser";
+// import { Counter } from "./Counter";
+// import { GitHubUser } from "./GitHubUser";
+import { CounterReducer } from "./state/CounterReducer";
+// import { GitHubUserList } from "./GitHubUserList";
+// import { ShowGitHubUser } from "./ShowGitHubUser";
 // import { DisplayLanguage } from "./DisplayLanguage";
 // import { Hello } from "./Hello";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
@@ -17,7 +18,7 @@ import { GitHubUser } from "./GitHubUser";
 // import { Sum } from "./Sum";
 // import { TodoList } from "./TodoList";
 // import { UncontrolledLogin } from "./UncontrolledLogin";
-//import { Welcome } from "./Welcome";
+// import { Welcome } from "./Welcome";
 // import { HookCounter } from "./HookCounter"
 // import { HookForm } from "./HookForm";
 
@@ -98,8 +99,9 @@ export class App extends React.Component {
 
           <Link to="/">Home</Link>
           <Link to="counter">Go to Counter</Link>
-          <Link to="user:username">Go to fetch Github</Link> */}
-          <GitHubUser />
+          <Link to="user:username">Go to fetch Github</Link> 
+          <GitHubUser />*/}
+          <CounterReducer />
         </Container>
       </div>
     );
